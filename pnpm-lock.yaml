@@ -4,6 +4,9 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  axi-sdk-js@0.1.8: a4d8386a55548f05bdbfd5eb5bdc8aea082821685b8cc79a66fba61a277cfa16
+
 importers:
   .:
     dependencies:
@@ -12,7 +15,7 @@ importers:
         version: 4.2.4
       axi-sdk-js:
         specifier: ^0.1.8
-        version: 0.1.8
+        version: 0.1.8(patch_hash=a4d8386a55548f05bdbfd5eb5bdc8aea082821685b8cc79a66fba61a277cfa16)
       chokidar:
         specifier: ^4.0.3
         version: 4.0.3
@@ -2933,7 +2936,7 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  axi-sdk-js@0.1.8:
+  axi-sdk-js@0.1.8(patch_hash=a4d8386a55548f05bdbfd5eb5bdc8aea082821685b8cc79a66fba61a277cfa16):
     dependencies:
       "@toon-format/toon": 2.1.0
 
