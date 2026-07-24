@@ -11,4 +11,7 @@ onlyBuiltDependencies:
 allowBuilds:
   esbuild: true
 patchedDependencies:
+  # Temporary: makes SessionStart hooks honor CLAUDE_CONFIG_DIR and FM_GLM_CLAUDE_CONFIG_DIR
+  # (so glm crewmates receive lavish-axi's ambient context). Drop this patch once
+  # evil-skills/axi#1 ships on npm and this repo can use that release.
   axi-sdk-js@0.1.8: patches/axi-sdk-js@0.1.8.patch
